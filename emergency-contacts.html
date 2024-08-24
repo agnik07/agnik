@@ -1,1 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Contacts</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            text-align: left;
+        }
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        #searchInput {
+            width: 100%;
+            font-size: 18px;
+            padding: 12px;
+            margin: 12px 0;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Women Safety Empower</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#workshops">Workshops</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#login" class="btn-login">Login</a></li>
+                <li><a href="#signup" class="btn-signup">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section id="help">
+        <h2>Helpline Numbers</h2>
+
+        <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search for states..">
+
+        <table id="helplineTable" border="1" class="dataframe">
+          <thead>
+            <tr>
+              <th>State</th>
+              <th>Women Helpline Number</th>
+              <th>Police Helpline Number</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Andhra Pradesh</td>
+              <td>181</td>
+              <td>112</td>
+            </tr>
+            <tr>
+              <td>Arunachal Pradesh</td>
+              <td>7827170170</td>
+              <td>100</td>
+            </tr>
+        <tr>
+          <td>Arunachal Pradesh</td>
+          <td>7827170170</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Assam</td>
+          <td>3612313004</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Bihar</td>
+          <td>181</td>
+          <td>112</td>
+        </tr>
+        <tr>
+          <td>Chandigarh</td>
+          <td>181</td>
+          <td>112</td>
+        </tr>
+        <tr>
+          <td>Chhattisgarh</td>
+          <td>181</td>
+          <td>112</td>
+        </tr>
+        <tr>
+          <td>Delhi</td>
+          <td>1091</td>
+          <td>112</td>
+        </tr>
+        <tr>
+          <td>Goa</td>
+          <td>1091</td>
+          <td>112</td>
+        </tr>
+        <tr>
+          <td>Gujarat</td>
+          <td>181</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Haryana</td>
+          <td>1091</td>
+          <td>112</td>
+        </tr>
+        <tr>
+          <td>Himachal Pradesh</td>
+          <td>1091</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Jammu & Kashmir</td>
+          <td>181</td>
+          <td>112</td>
+        </tr>
+        <tr>
+          <td>Jharkhand</td>
+          <td>181</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Karnataka</td>
+          <td>1091</td>
+          <td>112</td>
+        </tr>
+        <tr>
+          <td>Kerala</td>
+          <td>1091</td>
+          <td>112</td>
+        </tr>
+        <tr>
+          <td>Madhya Pradesh</td>
+          <td>1090</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Maharashtra</td>
+          <td>1091</td>
+          <td>112</td>
+        </tr>
+        <tr>
+          <td>Manipur</td>
+          <td>181</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Meghalaya</td>
+          <td>181</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Mizoram</td>
+          <td>3892850096</td>
+          <td>112</td>
+        </tr>
+        <tr>
+          <td>Nagaland</td>
+          <td>181</td>
+          <td>3702243711</td>
+        </tr>
+        <tr>
+          <td>Odisha</td>
+          <td>181</td>
+          <td>112</td>
+        </tr>
+        <tr>
+          <td>Punjab</td>
+          <td>1043</td>
+          <td>1787</td>
+        </tr>
+        <tr>
+          <td>Rajasthan</td>
+          <td>1090</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Sikkim</td>
+          <td>181</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Tamil Nadu</td>
+          <td>9150056871</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Telangana</td>
+          <td>181</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Tripura</td>
+          <td>1091</td>
+          <td>913812320137</td>
+        </tr>
+        <tr>
+          <td>Uttar Pradesh</td>
+          <td>1090</td>
+          <td>112</td>
+        </tr>
+        <tr>
+          <td>Uttarakhand</td>
+          <td>1091</td>
+          <td>112</td>
+        </tr>
+        <tr>
+          <td>West Bengal</td>
+          <td>1090</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Andaman & Nicobar</td>
+          <td>1091</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Dadra & Nagar Haveli and Daman & Diu</td>
+          <td>1091</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Lakshadweep</td>
+          <td>4896262204</td>
+          <td>100</td>
+        </tr>
+        <tr>
+
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+    </section>
+
+    <script>
+        function searchTable() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById('searchInput');
+            filter = input.value.toUpperCase();
+            table = document.getElementById('helplineTable');
+            tr = table.getElementsByTagName('tr');
+            
+            for (i = 1; i < tr.length; i++) {
+                tr[i].style.display = 'none';
+                td = tr[i].getElementsByTagName('td');
+                for (var j = 0; j < td.length; j++) {
+                    if (td[j]) {
+                        txtValue = td[j].textContent || td[j].innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.display = '';
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
