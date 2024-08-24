@@ -1,9 +1,29 @@
-function showAlert() {
-    alert('SafeGuard AI provides advanced real-time safety analytics to protect women in public spaces.');
-}
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Website Loaded');
 
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    alert('Thank you for your message! We will get back to you soon.');
-    document.getElementById('contact-form').reset();
+    // Example of a click event for a button
+    const panicButton = document.querySelector('.btn-cta');
+    if (panicButton) {
+        panicButton.addEventListener('click', function() {
+            alert('Panic button clicked! Sending help...');
+            // Here, you would implement the actual logic to send the SOS
+        });
+    }
+
+    // Example of Geolocation for finding nearby police stations
+    const emergencyContactButton = document.querySelector('.btn-signup'); // Just an example button
+    if (emergencyContactButton) {
+        emergencyContactButton.addEventListener('click', function() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    const lat = position.coords.latitude;
+                    const lon = position.coords.longitude;
+                    console.log(`Latitude: ${lat}, Longitude: ${lon}`);
+                    // Here you would implement the actual logic to show nearby police stations
+                });
+            } else {
+                alert('Geolocation is not supported by this browser.');
+            }
+        });
+    }
 });
